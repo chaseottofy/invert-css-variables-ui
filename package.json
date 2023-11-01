@@ -1,0 +1,33 @@
+{
+  "name": "invert-css-variables-ui",
+  "description": "A UI for invert-css",
+  "author": "chase ottofy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "css",
+    "invert",
+    "invert-css",
+    "color-conversion",
+    "css-utility",
+    "invert-colors",
+    "invert-css-vars",
+    "ui-tool"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5"
+  },
+  "dependencies": {
+    "invert-css": "^1.0.4"
+  }
+}

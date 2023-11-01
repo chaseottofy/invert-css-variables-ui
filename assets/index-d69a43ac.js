@@ -10,13 +10,11 @@
 `).trim()}s(b,"removePadding");function N(o){let e=b(o);if(e.slice(0,4)==="root")return console.log(v.includedRoot),o;let c=[],i=e.trim().split(`
 `);for(let t of i){let[r,n]=t.split(":").map(a=>a.trim());if(!r||!n)return console.log(`Invalid CSS variable declaration: ${t}`),o;let l=m(n.replace(/;$/,""));if(!l)return console.log(`Invalid color value: ${n}`),o;c.push(`  ${r}: ${l};`)}return`
 ${c.join(`
-`).trimEnd()}`}s(N,"invert");const u=document.querySelector(".textinput"),f=document.querySelector(".textoutput"),y=document.querySelector(".float-copy"),S=document.querySelector(".float-reset"),E=document.querySelector(".run-btn"),x=`
+`).trimEnd()}`}s(N,"invert");const u=document.querySelector(".textinput"),f=document.querySelector(".textoutput"),y=document.querySelector(".float-copy"),E=document.querySelector(".float-reset"),S=document.querySelector(".run-btn"),x=`
   > Invert CSS variables with ease.
   > Just paste variables and run
   > Perfect for creating themes.
 
-  > Try it out with this tool's CSS variables.
-  
   --------------------------------------------
   
   > ACCEPTED COLOR FORMATS
@@ -40,4 +38,4 @@ ${c.join(`
 --accent-7: #eaeaea;
 --accent-8: #fafafa;
 --accent-9: #b6b9c2;
-`;u.setAttribute("placeholder",x);u.textContent=C;const L=o=>{navigator.clipboard.writeText(o)},T=()=>{f.innerText="",u.innerText=""},I=()=>{const o=u.value;o&&(f.innerText=N(o))};E.addEventListener("click",I);y.addEventListener("click",()=>{L(f.innerText)});S.addEventListener("click",T);
+`;u.setAttribute("placeholder",x);u.textContent=C;const L=o=>{navigator.clipboard.writeText(o)},I=()=>{f.innerText="",u.innerText=""},O=()=>{const o=u.value;o&&(f.innerText=N(o))};S.addEventListener("click",O);y.addEventListener("click",()=>{L(f.innerText)});E.addEventListener("click",I);

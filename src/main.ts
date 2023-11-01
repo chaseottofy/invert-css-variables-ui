@@ -1,4 +1,4 @@
-import './styles/root.css';
+import './root.css';
 import invert from 'invert-css';
 
 const textarea = document.querySelector('.textinput') as HTMLTextAreaElement;
@@ -12,8 +12,6 @@ const exampleText = `
   > Just paste variables and run
   > Perfect for creating themes.
 
-  > Try it out with this tool's CSS variables.
-  
   --------------------------------------------
   
   > ACCEPTED COLOR FORMATS
